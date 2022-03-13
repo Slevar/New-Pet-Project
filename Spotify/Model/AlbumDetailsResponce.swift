@@ -1,0 +1,25 @@
+//
+//  AlbumDetailsResponce.swift
+//  Spotify
+//
+//  Created by Вардан Мукучян on 09.10.2021.
+//
+
+import Foundation
+struct AlbumDetailsResponce: Codable {
+    let album_type: String
+    let artists: [Artist]
+    let available_markets: [String]
+    let external_urls: [String: String]
+    let id: String
+    let images: [APIImage]
+    let label: String
+    let name: String
+    let tracks: TracksResponce
+}
+
+struct TracksResponce: Codable {
+    let items: [AudioTrack]
+    
+}
+
